@@ -1,14 +1,14 @@
 app_name = "erpnext_restaurant"
 app_title = "ERPNext Restaurant"
 app_publisher = "RocketQuackIT"
-app_description = "A Frappe/ERPNext extension for restaurants and bars, adding a dedicated POS UI and operational workflows for service and kitchen."
+app_description = "ERPNext extension for restaurants and bars, adding a dedicated POS UI and operational workflows for service and kitchen"
 app_email = "contact@rocketquack.eu"
 app_license = "gpl-3.0"
 
 # Apps
 # ------------------
 
-# required_apps = []
+required_apps = ["erpnext"]
 
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
@@ -246,4 +246,3 @@ app_license = "gpl-3.0"
 # ------------
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
-
