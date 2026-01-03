@@ -44,6 +44,11 @@ Then you can install the app on a site:
 bench --site yoursite.com install-app erpnext_sumup
 ```
 
+Migrate new Installed App
+```bash
+bench --site yoursite.com migrate
+```
+
 ## License
 
 Copyright (C) 2026 RocketQuackIT
