@@ -3,7 +3,7 @@ name = "erpnext_restaurant"
 authors = [
     { name = "RocketQuackIT", email = "contact@rocketquack.eu"}
 ]
-description = "A Frappe/ERPNext extension for restaurants and bars, adding a dedicated POS UI and operational workflows for service and kitchen."
+description = "ERPNext extension for restaurants and bars, adding a dedicated POS UI and operational workflows for service and kitchen"
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]
