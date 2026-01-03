@@ -1,41 +1,55 @@
-### ERPNext Restaurant
+<div align="center">
+  <p>
+    <img src="docs/assets/RESTAURANT_APP_LOGO.png" alt="ERPNext Restaurant Logo" width="164"/>
+  </p>
+    <h1>ERPNext Restaurant<br> (WORK IN PROGRESS)</h1>
+</div>
 
-A Frappe/ERPNext extension for restaurants and bars, adding a dedicated POS UI and operational workflows for service and kitchen.
+## Supported Versions
 
-### Installation
+| ERPNext | Frappe | Support-Status |
+|---------|--------|----------------|
+| v16 Beta    | v16 Beta   | ⚙️ Coming soon     |
+| v15     | v15    | ⚙️ Coming soon     |
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+## Installation (Frappe Cloud)
+
+The app can be installed directly via Frappe Cloud:
+
+1. Open the Frappe Cloud dashboard at [https://frappecloud.com/dashboard/#/sites](https://frappecloud.com/dashboard/#/sites)
+2. Click **“New Site”** to create a new instance
+3. In the **“Select apps to install”** step:
+
+   * Choose the desired Frappe/ERPNext version
+   * Also enable the **`ERPNEXT Restaurant`** app
+4. Finish the wizard until the site has been created
+
+## Installation (Self-Hosted)
+
+Once ERPNext is installed, add the app to your Bench environment using the following command:
 
 ```bash
-cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch develop
-bench install-app erpnext_restaurant
+bench get-app https://github.com/Rocket-Quack/erpnext_restaurant --branch version-15
 ```
 
-### Contributing
-
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
+Install required modules and dependencies:
 
 ```bash
-cd apps/erpnext_restaurant
-pre-commit install
+bench setup requirements
 ```
 
-Pre-commit is configured to use the following tools for checking and formatting your code:
+Then you can install the app on a site:
 
-- ruff
-- eslint
-- prettier
-- pyupgrade
+```bash
+bench --site yoursite.com install-app erpnext_sumup
+```
 
-### CI
+## License
 
-This app can use GitHub Actions for CI. The following workflows are configured:
+Copyright (C) 2026 RocketQuackIT
 
-- CI: Installs this app and runs unit tests on every push to `develop` branch.
-- Linters: Runs [Frappe Semgrep Rules](https://github.com/frappe/semgrep-rules) and [pip-audit](https://pypi.org/project/pip-audit/) on every pull request.
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-### License
-
-gpl-3.0
+GNU GPL V3. See the LICENSE file for more information.
