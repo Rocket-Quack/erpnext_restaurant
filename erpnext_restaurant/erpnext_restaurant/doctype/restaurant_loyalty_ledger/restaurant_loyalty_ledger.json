@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2026-01-08 00:00:00",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_datetime",
+  "points_change",
+  "points_balance",
+  "reason",
+  "bill",
+  "processed_by",
+  "notes"
+ ],
+ "fields": [
+  {
+   "default": "Now",
+   "fieldname": "posting_datetime",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Posting Datetime"
+  },
+  {
+   "fieldname": "points_change",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Points Change",
+   "reqd": 1
+  },
+  {
+   "fieldname": "points_balance",
+   "fieldtype": "Float",
+   "label": "Points Balance"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Select",
+   "label": "Reason",
+   "options": "Earned\nRedeemed\nManual Adjustment\nTransfer In\nTransfer Out"
+  },
+  {
+   "fieldname": "bill",
+   "fieldtype": "Link",
+   "label": "Bill",
+   "options": "Restaurant Bill"
+  },
+  {
+   "fieldname": "processed_by",
+   "fieldtype": "Link",
+   "label": "Processed By",
+   "options": "User"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-08 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ERPNext Restaurant",
+ "name": "Restaurant Loyalty Ledger",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

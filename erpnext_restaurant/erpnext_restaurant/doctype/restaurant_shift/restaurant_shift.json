@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-01-04 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "status",
+  "opened_at",
+  "opened_by",
+  "closed_at",
+  "closed_by",
+  "opening_cash",
+  "expected_cash",
+  "actual_cash",
+  "over_short",
+  "stock_entry",
+  "stock_posted_at",
+  "assignments",
+  "notes"
+ ],
+ "fields": [
+  {
+   "default": "RSH-.YYYY.-.####",
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Naming Series"
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Open\nClosing\nClosed\nCancelled"
+  },
+  {
+   "default": "Now",
+   "fieldname": "opened_at",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Opened At"
+  },
+  {
+   "fieldname": "opened_by",
+   "fieldtype": "Link",
+   "label": "Opened By",
+   "options": "User"
+  },
+  {
+   "fieldname": "closed_at",
+   "fieldtype": "Datetime",
+   "label": "Closed At"
+  },
+  {
+   "fieldname": "closed_by",
+   "fieldtype": "Link",
+   "label": "Closed By",
+   "options": "User"
+  },
+  {
+   "fieldname": "opening_cash",
+   "fieldtype": "Currency",
+   "label": "Opening Cash",
+   "options": "currency"
+  },
+  {
+   "fieldname": "expected_cash",
+   "fieldtype": "Currency",
+   "label": "Expected Cash",
+   "options": "currency"
+  },
+  {
+   "fieldname": "actual_cash",
+   "fieldtype": "Currency",
+   "label": "Actual Cash",
+   "options": "currency"
+  },
+  {
+   "fieldname": "over_short",
+   "fieldtype": "Currency",
+   "label": "Over/Short",
+   "options": "currency"
+  },
+  {
+   "fieldname": "stock_entry",
+   "fieldtype": "Link",
+   "label": "Stock Entry",
+   "options": "Stock Entry"
+  },
+  {
+   "fieldname": "stock_posted_at",
+   "fieldtype": "Datetime",
+   "label": "Stock Posted At"
+  },
+  {
+   "fieldname": "assignments",
+   "fieldtype": "Table",
+   "label": "Assignments",
+   "options": "Restaurant Shift Assignment"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "links": [],
+ "modified": "2026-01-04 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ERPNext Restaurant",
+ "name": "Restaurant Shift",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "share": 1,
+   "write": 1,
+   "role": "System Manager"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,186 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-01-04 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "table_session",
+  "order_type",
+  "shift",
+  "status",
+  "customer",
+  "posting_time",
+  "opened_by",
+  "paid_at",
+  "settled_by",
+  "items",
+  "payments",
+  "subtotal",
+  "discount",
+  "discount_amount",
+  "tax_amount",
+  "tip_amount",
+  "voucher_amount",
+  "grand_total",
+  "outstanding_amount",
+  "notes"
+ ],
+ "fields": [
+  {
+   "default": "RB-.YYYY.-.####",
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Naming Series"
+  },
+  {
+   "fieldname": "table_session",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Table Session",
+   "options": "Restaurant Table Session"
+  },
+  {
+   "fieldname": "order_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Order Type",
+   "options": "Dine-In\nTakeaway\nDelivery\nBar-Only"
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Link",
+   "label": "Shift",
+   "options": "Restaurant Shift"
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Open\nPaid\nCancelled"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "default": "Now",
+   "fieldname": "posting_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Posting Time"
+  },
+  {
+   "fieldname": "opened_by",
+   "fieldtype": "Link",
+   "label": "Opened By",
+   "options": "User"
+  },
+  {
+   "fieldname": "paid_at",
+   "fieldtype": "Datetime",
+   "label": "Paid At"
+  },
+  {
+   "fieldname": "settled_by",
+   "fieldtype": "Link",
+   "label": "Settled By",
+   "options": "User"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Restaurant Bill Item"
+  },
+  {
+   "fieldname": "payments",
+   "fieldtype": "Table",
+   "label": "Payments",
+   "options": "Restaurant Bill Payment"
+  },
+  {
+   "fieldname": "subtotal",
+   "fieldtype": "Currency",
+   "label": "Subtotal",
+   "options": "currency"
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Link",
+   "label": "Discount",
+   "options": "Restaurant Discount"
+  },
+  {
+   "fieldname": "discount_amount",
+   "fieldtype": "Currency",
+   "label": "Discount Amount",
+   "options": "currency"
+  },
+  {
+   "fieldname": "tax_amount",
+   "fieldtype": "Currency",
+   "label": "Tax Amount",
+   "options": "currency"
+  },
+  {
+   "fieldname": "tip_amount",
+   "fieldtype": "Currency",
+   "label": "Tip Amount",
+   "options": "currency"
+  },
+  {
+   "fieldname": "voucher_amount",
+   "fieldtype": "Currency",
+   "label": "Voucher Amount",
+   "options": "currency"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "options": "currency"
+  },
+  {
+   "fieldname": "outstanding_amount",
+   "fieldtype": "Currency",
+   "label": "Outstanding Amount",
+   "options": "currency"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "links": [],
+ "modified": "2026-01-04 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ERPNext Restaurant",
+ "name": "Restaurant Bill",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "share": 1,
+   "write": 1,
+   "role": "System Manager"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

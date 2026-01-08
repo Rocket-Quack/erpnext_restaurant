@@ -1,0 +1,167 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "Single",
+ "creation": "2026-01-04 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "default_pos_profile",
+  "default_order_type",
+  "default_reservation_duration_minutes",
+  "voucher_default_expiry_days",
+  "default_floor_plan",
+  "require_active_shift",
+  "require_pos_profile",
+  "use_tables",
+  "use_floor_plans",
+  "use_reservations",
+  "require_table_session",
+  "enable_quick_pay",
+  "enable_split_bills",
+  "enable_discounts",
+  "enable_vouchers",
+  "enable_loyalty",
+  "enable_tips",
+  "enable_container_tracking",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "default_order_type",
+   "fieldtype": "Select",
+   "label": "Default Order Type",
+   "options": "Dine-In\nTakeaway\nDelivery\nBar-Only"
+  },
+  {
+   "fieldname": "default_reservation_duration_minutes",
+   "fieldtype": "Int",
+   "label": "Default Reservation Duration (Minutes)"
+  },
+  {
+   "fieldname": "voucher_default_expiry_days",
+   "fieldtype": "Int",
+   "label": "Voucher Default Expiry (Days)"
+  },
+  {
+   "fieldname": "default_floor_plan",
+   "fieldtype": "Link",
+   "label": "Default Floor Plan",
+   "options": "Restaurant Floor Plan"
+  },
+  {
+   "default": "1",
+   "fieldname": "require_active_shift",
+   "fieldtype": "Check",
+   "label": "Require Active Shift"
+  },
+  {
+   "default": "0",
+   "fieldname": "require_pos_profile",
+   "fieldtype": "Check",
+   "label": "Require POS Profile"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_container_tracking",
+   "fieldtype": "Check",
+   "label": "Enable Ingredient Container Tracking"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "default_pos_profile",
+   "fieldtype": "Link",
+   "label": "Default POS Profile",
+   "options": "Restaurant POS Profile"
+  },
+  {
+   "default": "1",
+   "fieldname": "use_tables",
+   "fieldtype": "Check",
+   "label": "Use Tables"
+  },
+  {
+   "default": "1",
+   "fieldname": "use_floor_plans",
+   "fieldtype": "Check",
+   "label": "Use Floor Plans"
+  },
+  {
+   "default": "1",
+   "fieldname": "use_reservations",
+   "fieldtype": "Check",
+   "label": "Use Reservations"
+  },
+  {
+   "default": "1",
+   "fieldname": "require_table_session",
+   "fieldtype": "Check",
+   "label": "Require Table Session"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_quick_pay",
+   "fieldtype": "Check",
+   "label": "Enable Quick Pay"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable_split_bills",
+   "fieldtype": "Check",
+   "label": "Enable Split Bills"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable_discounts",
+   "fieldtype": "Check",
+   "label": "Enable Discounts"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable_vouchers",
+   "fieldtype": "Check",
+   "label": "Enable Vouchers"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_loyalty",
+   "fieldtype": "Check",
+   "label": "Enable Loyalty"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable_tips",
+   "fieldtype": "Check",
+   "label": "Enable Tips"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-01-04 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ERPNext Restaurant",
+ "name": "Restaurant Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "share": 1,
+   "write": 1,
+   "role": "System Manager"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

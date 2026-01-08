@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2026-01-04 00:00:00",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "user",
+  "employee",
+  "role",
+  "area",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Select",
+   "label": "Role",
+   "options": "Waiter\nBartender\nCashier\nRunner\nManager"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Link",
+   "label": "Area",
+   "options": "Restaurant Area"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-04 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ERPNext Restaurant",
+ "name": "Restaurant Shift Assignment",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

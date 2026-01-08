@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2026-01-04 00:00:00",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ingredient_item",
+  "qty",
+  "uom",
+  "ratio_percent",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "ingredient_item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Ingredient Item",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty",
+   "reqd": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "ratio_percent",
+   "fieldtype": "Percent",
+   "label": "Ratio Percent"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-04 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ERPNext Restaurant",
+ "name": "Restaurant Recipe Ingredient",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

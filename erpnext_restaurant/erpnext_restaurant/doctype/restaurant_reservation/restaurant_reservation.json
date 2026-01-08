@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-01-04 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "status",
+  "reservation_datetime",
+  "expected_end_time",
+  "party_size",
+  "customer",
+  "contact_name",
+  "contact_phone",
+  "contact_email",
+  "preferred_area",
+  "source",
+  "tables",
+  "notes"
+ ],
+ "fields": [
+  {
+   "default": "RSV-.YYYY.-.####",
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Naming Series"
+  },
+  {
+   "default": "Requested",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Requested\nConfirmed\nSeated\nCompleted\nCancelled\nNo Show"
+  },
+  {
+   "fieldname": "reservation_datetime",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Reservation Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expected_end_time",
+   "fieldtype": "Datetime",
+   "label": "Expected End Time"
+  },
+  {
+   "fieldname": "party_size",
+   "fieldtype": "Int",
+   "label": "Party Size"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "contact_name",
+   "fieldtype": "Data",
+   "label": "Contact Name"
+  },
+  {
+   "fieldname": "contact_phone",
+   "fieldtype": "Data",
+   "label": "Contact Phone"
+  },
+  {
+   "fieldname": "contact_email",
+   "fieldtype": "Data",
+   "label": "Contact Email"
+  },
+  {
+   "fieldname": "preferred_area",
+   "fieldtype": "Link",
+   "label": "Preferred Area",
+   "options": "Restaurant Area"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "label": "Source",
+   "options": "Walk-in\nPhone\nOnline\nOther"
+  },
+  {
+   "fieldname": "tables",
+   "fieldtype": "Table",
+   "label": "Tables",
+   "options": "Restaurant Reservation Table"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "links": [],
+ "modified": "2026-01-04 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ERPNext Restaurant",
+ "name": "Restaurant Reservation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "share": 1,
+   "write": 1,
+   "role": "System Manager"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

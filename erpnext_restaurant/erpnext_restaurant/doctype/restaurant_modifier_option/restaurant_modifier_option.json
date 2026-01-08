@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2026-01-08 00:00:00",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "option_label",
+  "price_delta",
+  "is_default",
+  "default_qty",
+  "item",
+  "recipe",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "option_label",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Option Label",
+   "reqd": 1
+  },
+  {
+   "fieldname": "price_delta",
+   "fieldtype": "Currency",
+   "label": "Price Delta",
+   "options": "currency"
+  },
+  {
+   "fieldname": "is_default",
+   "fieldtype": "Check",
+   "label": "Is Default"
+  },
+  {
+   "fieldname": "default_qty",
+   "fieldtype": "Float",
+   "label": "Default Qty"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "recipe",
+   "fieldtype": "Link",
+   "label": "Recipe",
+   "options": "Restaurant Recipe"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-08 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ERPNext Restaurant",
+ "name": "Restaurant Modifier Option",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

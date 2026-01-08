@@ -5,6 +5,8 @@
     <h1>ERPNext Restaurant<br> (WORK IN PROGRESS)</h1>
 </div>
 
+This app targets restaurant workflows but intentionally covers a wider hospitality scope, including bar and club use cases where quick-pay and no-table flows are common.
+
 ## Supported Versions
 
 | ERPNext | Frappe | Support-Status |

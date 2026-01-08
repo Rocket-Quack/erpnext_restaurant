@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:group_name",
+ "creation": "2026-01-08 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "group_name",
+  "is_active",
+  "selection_type",
+  "min_select",
+  "max_select",
+  "required",
+  "free_qty",
+  "allow_qty",
+  "options",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "group_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Group Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "selection_type",
+   "fieldtype": "Select",
+   "label": "Selection Type",
+   "options": "Single\nMultiple"
+  },
+  {
+   "fieldname": "min_select",
+   "fieldtype": "Int",
+   "label": "Min Select"
+  },
+  {
+   "fieldname": "max_select",
+   "fieldtype": "Int",
+   "label": "Max Select"
+  },
+  {
+   "fieldname": "required",
+   "fieldtype": "Check",
+   "label": "Required"
+  },
+  {
+   "fieldname": "free_qty",
+   "fieldtype": "Float",
+   "label": "Free Qty"
+  },
+  {
+   "fieldname": "allow_qty",
+   "fieldtype": "Check",
+   "label": "Allow Qty"
+  },
+  {
+   "fieldname": "options",
+   "fieldtype": "Table",
+   "label": "Options",
+   "options": "Restaurant Modifier Option"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "links": [],
+ "modified": "2026-01-08 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ERPNext Restaurant",
+ "name": "Restaurant Modifier Group",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "share": 1,
+   "write": 1,
+   "role": "System Manager"
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "group_name",
+ "track_changes": 1
+}

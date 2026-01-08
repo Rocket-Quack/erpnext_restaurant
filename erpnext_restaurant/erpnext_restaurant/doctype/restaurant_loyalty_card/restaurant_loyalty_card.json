@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:card_id",
+ "creation": "2026-01-08 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "card_id",
+  "status",
+  "issued_at",
+  "issued_by",
+  "holder_name",
+  "holder_email",
+  "points_balance",
+  "replaced_by",
+  "ledger_entries",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "card_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Card ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Draft\nActive\nLost\nBlocked\nCancelled"
+  },
+  {
+   "default": "Now",
+   "fieldname": "issued_at",
+   "fieldtype": "Datetime",
+   "label": "Issued At"
+  },
+  {
+   "fieldname": "issued_by",
+   "fieldtype": "Link",
+   "label": "Issued By",
+   "options": "User"
+  },
+  {
+   "fieldname": "holder_name",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "holder_email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "points_balance",
+   "fieldtype": "Float",
+   "label": "Points Balance"
+  },
+  {
+   "fieldname": "replaced_by",
+   "fieldtype": "Link",
+   "label": "Replaced By",
+   "options": "Restaurant Loyalty Card"
+  },
+  {
+   "fieldname": "ledger_entries",
+   "fieldtype": "Table",
+   "label": "Ledger Entries",
+   "options": "Restaurant Loyalty Ledger"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "links": [],
+ "modified": "2026-01-08 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ERPNext Restaurant",
+ "name": "Restaurant Loyalty Card",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "share": 1,
+   "write": 1,
+   "role": "System Manager"
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "card_id",
+ "track_changes": 1
+}

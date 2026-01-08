@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:voucher_code",
+ "creation": "2026-01-04 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "voucher_code",
+  "status",
+  "initial_amount",
+  "remaining_amount",
+  "issued_at",
+  "issued_by",
+  "expiry_date",
+  "customer",
+  "sold_bill",
+  "redemptions",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "voucher_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Voucher Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Draft\nActive\nPartially Redeemed\nRedeemed\nCancelled\nExpired"
+  },
+  {
+   "fieldname": "initial_amount",
+   "fieldtype": "Currency",
+   "label": "Initial Amount",
+   "options": "currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remaining_amount",
+   "fieldtype": "Currency",
+   "label": "Remaining Amount",
+   "options": "currency"
+  },
+  {
+   "default": "Now",
+   "fieldname": "issued_at",
+   "fieldtype": "Datetime",
+   "label": "Issued At"
+  },
+  {
+   "fieldname": "issued_by",
+   "fieldtype": "Link",
+   "label": "Issued By",
+   "options": "User"
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "sold_bill",
+   "fieldtype": "Link",
+   "label": "Sold Bill",
+   "options": "Restaurant Bill"
+  },
+  {
+   "fieldname": "redemptions",
+   "fieldtype": "Table",
+   "label": "Redemptions",
+   "options": "Restaurant Voucher Redemption"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "links": [],
+ "modified": "2026-01-04 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ERPNext Restaurant",
+ "name": "Restaurant Voucher",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "share": 1,
+   "write": 1,
+   "role": "System Manager"
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "voucher_code",
+ "track_changes": 1
+}

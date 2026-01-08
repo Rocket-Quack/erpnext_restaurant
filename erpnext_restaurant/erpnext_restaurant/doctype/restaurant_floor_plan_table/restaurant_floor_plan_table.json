@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2026-01-04 00:00:00",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "table",
+  "pos_x",
+  "pos_y",
+  "width",
+  "height",
+  "rotation",
+  "z_index",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "table",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Table",
+   "options": "Restaurant Table",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pos_x",
+   "fieldtype": "Float",
+   "label": "Position X"
+  },
+  {
+   "fieldname": "pos_y",
+   "fieldtype": "Float",
+   "label": "Position Y"
+  },
+  {
+   "fieldname": "width",
+   "fieldtype": "Float",
+   "label": "Width"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "label": "Height"
+  },
+  {
+   "fieldname": "rotation",
+   "fieldtype": "Float",
+   "label": "Rotation"
+  },
+  {
+   "fieldname": "z_index",
+   "fieldtype": "Int",
+   "label": "Z Index"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-04 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ERPNext Restaurant",
+ "name": "Restaurant Floor Plan Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

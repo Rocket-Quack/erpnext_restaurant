@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-01-04 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "table",
+  "reservation",
+  "order_type",
+  "shift",
+  "status",
+  "opened_at",
+  "first_order_at",
+  "last_paid_at",
+  "cleaning_started_at",
+  "cleaning_done_at",
+  "waiter",
+  "guests",
+  "customer",
+  "delivery_address",
+  "pickup_time",
+  "delivery_time",
+  "notes"
+ ],
+ "fields": [
+  {
+   "default": "RTS-.YYYY.-.####",
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Naming Series"
+  },
+  {
+   "fieldname": "table",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Table",
+   "options": "Restaurant Table"
+  },
+  {
+   "fieldname": "reservation",
+   "fieldtype": "Link",
+   "label": "Reservation",
+   "options": "Restaurant Reservation"
+  },
+  {
+   "fieldname": "order_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Order Type",
+   "options": "Dine-In\nTakeaway\nDelivery\nBar-Only",
+   "reqd": 1
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Link",
+   "label": "Shift",
+   "options": "Restaurant Shift",
+   "in_list_view": 1
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Open\nCleaning\nClosed\nCancelled"
+  },
+  {
+   "default": "Now",
+   "fieldname": "opened_at",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Opened At"
+  },
+  {
+   "fieldname": "first_order_at",
+   "fieldtype": "Datetime",
+   "label": "First Order At"
+  },
+  {
+   "fieldname": "last_paid_at",
+   "fieldtype": "Datetime",
+   "label": "Last Paid At"
+  },
+  {
+   "fieldname": "cleaning_started_at",
+   "fieldtype": "Datetime",
+   "label": "Cleaning Started At"
+  },
+  {
+   "fieldname": "cleaning_done_at",
+   "fieldtype": "Datetime",
+   "label": "Cleaning Done At"
+  },
+  {
+   "fieldname": "waiter",
+   "fieldtype": "Link",
+   "label": "Waiter",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "guests",
+   "fieldtype": "Int",
+   "label": "Guests"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "delivery_address",
+   "fieldtype": "Link",
+   "label": "Delivery Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "pickup_time",
+   "fieldtype": "Datetime",
+   "label": "Pickup Time"
+  },
+  {
+   "fieldname": "delivery_time",
+   "fieldtype": "Datetime",
+   "label": "Delivery Time"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "links": [],
+ "modified": "2026-01-04 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ERPNext Restaurant",
+ "name": "Restaurant Table Session",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "share": 1,
+   "write": 1,
+   "role": "System Manager"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-01-04 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "table_session",
+  "table",
+  "order_type",
+  "shift",
+  "status",
+  "posting_time",
+  "waiter",
+  "notes",
+  "items",
+  "total_qty",
+  "total_amount"
+ ],
+ "fields": [
+  {
+   "default": "RO-.YYYY.-.####",
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Naming Series"
+  },
+  {
+   "fieldname": "table_session",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Table Session",
+   "options": "Restaurant Table Session",
+   "reqd": 1
+  },
+  {
+   "fieldname": "table",
+   "fieldtype": "Link",
+   "label": "Table",
+   "options": "Restaurant Table"
+  },
+  {
+   "fieldname": "order_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Order Type",
+   "options": "Dine-In\nTakeaway\nDelivery\nBar-Only"
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Link",
+   "label": "Shift",
+   "options": "Restaurant Shift"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Draft\nSubmitted\nIn Preparation\nServed\nCompleted\nCancelled"
+  },
+  {
+   "default": "Now",
+   "fieldname": "posting_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Posting Time"
+  },
+  {
+   "fieldname": "waiter",
+   "fieldtype": "Link",
+   "label": "Waiter",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Restaurant Order Item"
+  },
+  {
+   "fieldname": "total_qty",
+   "fieldtype": "Float",
+   "label": "Total Qty"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "options": "currency"
+  }
+ ],
+ "links": [],
+ "modified": "2026-01-04 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ERPNext Restaurant",
+ "name": "Restaurant Order",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "share": 1,
+   "write": 1,
+   "role": "System Manager"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

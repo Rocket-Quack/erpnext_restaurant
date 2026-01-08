@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:item",
+ "creation": "2026-01-08 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "item_class",
+  "is_active",
+  "allow_modifiers",
+  "default_recipe",
+  "modifier_groups",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item",
+   "options": "Item",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "item_class",
+   "fieldtype": "Link",
+   "label": "Item Class",
+   "options": "Restaurant Item Class"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_modifiers",
+   "fieldtype": "Check",
+   "label": "Allow Modifiers"
+  },
+  {
+   "fieldname": "default_recipe",
+   "fieldtype": "Link",
+   "label": "Default Recipe",
+   "options": "Restaurant Recipe"
+  },
+  {
+   "fieldname": "modifier_groups",
+   "fieldtype": "Table",
+   "label": "Modifier Groups",
+   "options": "Restaurant Menu Item Modifier"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "links": [],
+ "modified": "2026-01-08 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ERPNext Restaurant",
+ "name": "Restaurant Menu Item",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "share": 1,
+   "write": 1,
+   "role": "System Manager"
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "item",
+ "track_changes": 1
+}

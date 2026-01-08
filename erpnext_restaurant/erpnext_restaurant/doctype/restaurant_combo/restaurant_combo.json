@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:combo_name",
+ "creation": "2026-01-08 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "combo_name",
+  "combo_item",
+  "is_active",
+  "combo_price",
+  "components",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "combo_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Combo Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "combo_item",
+   "fieldtype": "Link",
+   "label": "Combo Item",
+   "options": "Item",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "combo_price",
+   "fieldtype": "Currency",
+   "label": "Combo Price",
+   "options": "currency"
+  },
+  {
+   "fieldname": "components",
+   "fieldtype": "Table",
+   "label": "Components",
+   "options": "Restaurant Combo Component"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "links": [],
+ "modified": "2026-01-08 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ERPNext Restaurant",
+ "name": "Restaurant Combo",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "share": 1,
+   "write": 1,
+   "role": "System Manager"
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "combo_name",
+ "track_changes": 1
+}

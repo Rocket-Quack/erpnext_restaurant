@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2026-01-04 00:00:00",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ingredient_item",
+  "container",
+  "qty_used",
+  "uom",
+  "recipe",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "ingredient_item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Ingredient Item",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "container",
+   "fieldtype": "Link",
+   "label": "Ingredient Container",
+   "options": "Restaurant Ingredient Container"
+  },
+  {
+   "fieldname": "qty_used",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty Used",
+   "reqd": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "recipe",
+   "fieldtype": "Link",
+   "label": "Recipe",
+   "options": "Restaurant Recipe"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-04 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ERPNext Restaurant",
+ "name": "Restaurant Ingredient Consumption",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

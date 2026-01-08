@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-01-04 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "ingredient_item",
+  "status",
+  "emptied_at",
+  "emptied_in_shift",
+  "stock_posted",
+  "stock_entry",
+  "capacity_qty",
+  "remaining_qty",
+  "uom",
+  "opened_at",
+  "warehouse",
+  "batch_no",
+  "notes"
+ ],
+ "fields": [
+  {
+   "default": "RIC-.YYYY.-.####",
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Naming Series"
+  },
+  {
+   "fieldname": "ingredient_item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Ingredient Item",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "default": "Sealed",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Sealed\nOpen\nEmpty"
+  },
+  {
+   "fieldname": "emptied_at",
+   "fieldtype": "Datetime",
+   "label": "Emptied At"
+  },
+  {
+   "fieldname": "emptied_in_shift",
+   "fieldtype": "Link",
+   "label": "Emptied In Shift",
+   "options": "Restaurant Shift"
+  },
+  {
+   "fieldname": "stock_posted",
+   "fieldtype": "Check",
+   "label": "Stock Posted"
+  },
+  {
+   "fieldname": "stock_entry",
+   "fieldtype": "Link",
+   "label": "Stock Entry",
+   "options": "Stock Entry"
+  },
+  {
+   "fieldname": "capacity_qty",
+   "fieldtype": "Float",
+   "label": "Capacity Qty"
+  },
+  {
+   "fieldname": "remaining_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Remaining Qty"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "opened_at",
+   "fieldtype": "Datetime",
+   "label": "Opened At"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Link",
+   "label": "Batch No",
+   "options": "Batch"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "links": [],
+ "modified": "2026-01-04 00:00:00",
+ "modified_by": "Administrator",
+ "module": "ERPNext Restaurant",
+ "name": "Restaurant Ingredient Container",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "share": 1,
+   "write": 1,
+   "role": "System Manager"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
