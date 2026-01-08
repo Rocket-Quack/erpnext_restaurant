@@ -41,7 +41,7 @@ bench setup requirements
 Then you can install the app on a site:
 
 ```bash
-bench --site yoursite.com install-app erpnext_sumup
+bench --site yoursite.com install-app erpnext_restaurant
 ```
 
 Migrate new Installed App
